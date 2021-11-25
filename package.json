@@ -6,7 +6,7 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "publishing": "np"
+    "release": "np"
   },
   "dependencies": {
     "@commitlint/cli": "^15.0.0",
@@ -37,7 +37,7 @@
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-push": "npm run publishing"
+      "pre-push": "npm run release"
     }
   },
   "lint-staged": {
