@@ -1,6 +1,6 @@
 {
   "name": "vcommit",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -33,21 +33,21 @@
     "prettier": "^2.2.1",
     "vue-template-compiler": "^2.6.11"
   },
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged",
-        "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-        "pre-push": "npm run publishing"
-      }
-    },
-    "lint-staged": {
-      "*.js": [
-        "yarn lint",
-        "git add"
-      ],
-      "*.vue": [
-        "yarn lint",
-        "git add"
-      ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-push": "npm run publishing"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint",
+      "git add"
+    ],
+    "*.vue": [
+      "yarn lint",
+      "git add"
+    ]
+  }
 }
