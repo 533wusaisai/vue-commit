@@ -1,3 +1,3 @@
 module.exports = {
-    "branch": "dev"
-}
+  branch: "dev",
+};
