@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint",
     "publishing": "np",
     "changelog": "standard-version && standard-version -i CHANGELOG.md -o CHANGELOG.md",
-    "release": "yarn build && yarn publishing"
+    "release": "yarn publishing"
   },
   "dependencies": {
     "@commitlint/cli": "^15.0.0",
