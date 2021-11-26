@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint",
     "publishing": "np",
     "changelog": "standard-version && standard-version -i CHANGELOG.md -o CHANGELOG.md",
+    "push:publish": "git push --follow-tags origin dev ",
     "release": "yarn publishing"
   },
   "dependencies": {
